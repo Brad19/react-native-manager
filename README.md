@@ -14,4 +14,4 @@ Architecture
  - redux-saga have been defined to carry out business validations in case of any
  - It uses firebase as a backend to manage its data
  - It uses react-navigation to navigate to screen
- - Common components have been created to re-use whereever it is requir
+ - Common components have been created to re-use whereever it is required
