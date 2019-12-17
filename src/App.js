@@ -6,7 +6,6 @@ import firebase from 'firebase';
 import ReduxThunk from 'redux-thunk';
 import promiseMiddleware from 'redux-promise-middleware';
 import createSagaMiddleware from 'redux-saga';
-//import fetchUserSaga from './components/sagas';
 import AllSagas from './AllSagas';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
