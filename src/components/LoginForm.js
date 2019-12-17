@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { Card, CardSection, Input, Button, Spinner, ConfirmModal } from './common';
-//import { emailChanged, passwordChanged, loginUser, newLoginUser } from '../actions';
 import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 import { getFormValues, reduxForm } from 'redux-form';
 import { createAction, handleAction, createActions, handleActions } from 'redux-actions';
 import firebase from 'firebase';
-// import EmployeeList from './EmployeeList';
-// import { bind } from 'redux-effects';
-// import { FULFILLED, REJECTED } from 'redux-promise-middleware';
 import { NavigationActions } from 'react-navigation';
 
 class LoginForm extends Component {
