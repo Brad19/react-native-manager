@@ -3,18 +3,6 @@ import { handleActions } from 'redux-actions';
 
 const INITIAL_STATE = {email: '', password: '', error:'', loading:false};
 
-// export default (state = INITIAL_STATE, action) => {
-//     console.log('reducer from Auth ', state, action);
-//     switch(action.type) {
-//         case EMAIL_CHANGED: return { ...state, email: action.payload }; 
-//         case PASSWORD_CHANGED: return { ...state, password: action.payload}
-//         case LOGIN_USER: return {...state, error:'', loading:true}
-//         case LOGIN_USER_SUCCESS: return {...state, ...INITIAL_STATE, user: action.payload}
-//         case LOGIN_USER_FAIL: return{...state, error: 'Authentication failed', password:'', loading:false}
-//         default: return state;
-//     }
-// };
-
 export default handleActions({
     ['EMAIL_CHANGED']:(state=INITIAL_STATE, action)=>  {
         return {...state, email: action.payload}
@@ -31,5 +19,3 @@ export default handleActions({
         return {...state, ...INITIAL_STATE, user: action.payload}
  },
 }, INITIAL_STATE)
-
-// export default reducer;
