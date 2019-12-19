@@ -1,4 +1,4 @@
-import LoginForm from './components/LoginForm';
+import LoginForm from './components/Login/LoginForm';
 import { StackNavigator } from 'react-navigation';
 import EmployeeList from './components/EmployeeList';
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
@@ -27,7 +28,10 @@ class App extends Component {
     }
     render() {
         const sagaMiddleware = createSagaMiddleware();
-        const store = createStore(reducers, composeEnhancers, applyMiddleware(promiseMiddleware(), sagaMiddleware));
+        const store = createStore(reducers, composeEnhancers, applyMiddleware(
+            promiseMiddleware(),
+            sagaMiddleware,
+        ));
         sagaMiddleware.run(AllSagas);
         return (
                 <Provider store={store}>

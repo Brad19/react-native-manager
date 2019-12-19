@@ -27,6 +27,10 @@ export default handleActions({
         console.log('auth user reducer fulfilled called', action.payload);
         return {...state, loading: false, user: action.payload}
     },
+    ['AUTHENTICATE_USER_REJECTED']:(state=INITIAL_STATE, action) => {
+        console.log('auth user reducer rejected called', action.payload);
+        return {...state, loading: false, user: action.payload}
+    },
     ['LOGIN_USER_SUCCESS']:(state=INITIAL_STATE, action)=>  {
         return {...state, ...INITIAL_STATE, user: action.payload}
  },

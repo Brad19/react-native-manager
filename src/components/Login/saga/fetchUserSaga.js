@@ -1,7 +1,7 @@
 import { call, takeLatest, put, delay } from 'redux-saga/effects';
 import { FULFILLED, REJECTED } from 'redux-promise-middleware';
-import { actions } from './LoginForm';
-import { actionTypes } from './LoginForm';
+import { actions } from '../../LoginForm';
+import { actionTypes } from '../../LoginForm';
 import { NavigationActions } from 'react-navigation';
 
 function* fetchUser(action) {
