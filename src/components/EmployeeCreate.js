@@ -16,7 +16,6 @@ class EmployeeCreate extends Component {
         this.props.employeeCreate({name, phone, shift: shift || 'Monday'});
     }
     render() {
-        console.log('props.employee ', this.props.employee);
         return(
             <Card>
                 <EmployeeForm {...this.props} />
