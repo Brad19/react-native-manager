@@ -1,7 +1,5 @@
-import { call, takeLatest, put, delay } from 'redux-saga/effects';
-import { FULFILLED, REJECTED } from 'redux-promise-middleware';
-import { actions } from '../../LoginForm';
-import { actionTypes } from '../../LoginForm';
+import { takeLatest, put, delay } from 'redux-saga/effects';
+import { FULFILLED } from 'redux-promise-middleware';
 import { NavigationActions } from 'react-navigation';
 
 function* fetchUser(action) {
@@ -20,7 +18,7 @@ function* fetchUser(action) {
 
 function* fetchUserSaga() {
     console.log('fetchUserSaga ');
-  yield takeLatest(`${actionTypes.AUTHENICATE_USER}_${FULFILLED}`, fetchUser)  
+  yield takeLatest(`AUTHENICATE_USER_${FULFILLED}`, fetchUser)  
 }
 
 export default fetchUserSaga;

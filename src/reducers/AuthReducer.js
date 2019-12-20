@@ -1,4 +1,3 @@
-import { EMAIL_CHANGED, PASSWORD_CHANGED, LOGIN_USER_SUCCESS, LOGIN_USER_FAIL, LOGIN_USER } from '../actions/types';
 import { handleActions } from 'redux-actions';
 
 const INITIAL_STATE = {email: '', password: '', error:'', loading:false};

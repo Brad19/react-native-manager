@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardSection, Input, Button, Spinner } from './common';
+import { Card, CardSection, Input, Button, Spinner } from '../common';
 import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 import { getFormValues, reduxForm } from 'redux-form';
